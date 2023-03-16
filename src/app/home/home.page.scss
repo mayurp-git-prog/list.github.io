@@ -1,0 +1,62 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.fixlbl-1 {
+  min-width: 30% !important;
+  max-width: 30% !important;
+  white-space: normal;
+}
+
+.fixlbl-3 {
+  min-width: 30% !important;
+  max-width: 30% !important;
+  white-space: nowrap;
+  margin: 10px 5px;
+}
+
+ion-row._r-2 {
+  width: 100%;
+
+  ion-list {
+    width: 100%;
+    background: #dce4e6;
+    text-align: left;
+    padding: 0;
+
+    ion-item {
+      --background: #dce4e6;
+
+      ion-label,
+      ion-note {
+        padding: 6px 0px;
+        color: #212121;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-searchbar placeholder="Search" [(ngModel)]="SearchTerm" (ionChange)="searchBtnClick()">
+    </ion-searchbar>
+  </ion-header>
+
+
+
+  <ion-row class="_r-2">
+    <ion-list>
+      <ion-item lines="none">
+        <ion-label class="fixlbl-3">ID</ion-label>
+        <ion-label class="fixlbl-1">Title</ion-label>
+        <ion-label class="fixlbl-1">Body</ion-label>
+
+      </ion-item>
+    </ion-list>
+  </ion-row>
+
+
+  <ion-item *ngFor="let post of postsList;">
+    <ion-label class="fixlbl-3">
+      {{post.id}}
+    </ion-label>
+    <ion-label class="fixlbl-1">
+      {{post.title}}
+    </ion-label>
+    <ion-label class="fixlbl-1">
+      {{post.body}}
+    </ion-label>
+  </ion-item>
+</ion-content>
